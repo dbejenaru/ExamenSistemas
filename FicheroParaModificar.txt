@@ -2,4 +2,9 @@ Segunda modificacion
 Modificado Por el CloneExamen
 otro Cambio
 
+Tema3
+Pregunta 7
+Si hacemos CheckOut nos va a faltar el fichero Modelo.Java, el fichero Temporal.TXT y vamos a tener el fichero Gestion.js con lo que se ha modificado.
+
+
 https://github.com/dbejenaru/ExamenSistemas
