@@ -1,0 +1,19 @@
+TEMA2
+
+1. mkdir /home/alumno/Documentos/pruebas
+rmdir -p /home/alumno/Documentos/pruebas
+
+2.
+cd /etc
+cp *ro* /home/alumno/Documentos/Descargas
+
+3.
+cat nombres_roles.txt | sort | head -5
+
+4.
+cat cabecera.txt > resultados.txt | cat nombres_roles.txt >> resultados.txt
+
+TEMA3
+1.
+git init : en un directorio donde tenga los ficheros y/o directorios
+

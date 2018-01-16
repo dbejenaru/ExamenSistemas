@@ -1,0 +1,42 @@
+TEMA4
+P1:
+sudo addgroup ciento56
+sudo addgroup ines
+sudo addgroup carles
+sudo addgroup oriol
+
+sudo useradd -g ciento56 -d /home/mariano -m -s /bin/bash mariano
+
+Despues de crear el usuario, se le pone una contraseña:
+sudo passwd mariano
+
+sudo useradd -g ciento56 -d /home/albert -m -s /bin/bash albert
+sudo useradd -g ciento56 -d /home/ines -m -s /bin/bash ines
+sudo adduser --ingroup ines ines
+sudo useradd -g carles -d /home/carles -m -s /bin/bash carles
+sudo useradd -g oriol -d /home/oriol -m -s /bin/bash oriol
+
+P2:
+Se crea el directorio:
+mkdir negociacion
+Se crea el grupo:
+sudo addgroup negociacion
+La carpeta se le atribuie al grupo
+chgrp negociacion //negociacion
+
+A esta carpeta se le pone el codigo de derechos 660 que da derecho de escritura, lectura y ejecucion al proprietario y a los que partenecen al grupo.
+ 
+chmod 770 //negociacion
+
+Se anaden los usuarios a este grupo:
+sudo adduser --ingroup negociacion mariano // albert // ines
+
+P3:
+Carles debe partenecer a un grupo sin que nadie mas partenezca a este grupo y el grupo debe tener derecho de ejecucion sobre esta carpeta. chmod 670
+
+P4:
+Primero, carles debe tener derecho de ejecucion sobre la carpeta donde se encuentra el fichero.
+1.Al fichero se le cambia los derechos a 666 por ejemplo.
+2. Carles se anade al grupo Constitucion.
+3. El fichero se mueve a un directorio que partenece al grupo de Carles.
+
